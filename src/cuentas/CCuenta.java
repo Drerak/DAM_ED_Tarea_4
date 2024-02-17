@@ -1,16 +1,36 @@
 package cuentas;
 
+/** 
+ * Ingreso comentarios
+ * en la clase CCuenta
+ */
+
 public class CCuenta {
 
+	/**
+	 *	creo los atributos de la clase ccuenta 
+	 */
 
     private String nombre;
     private String cuenta;
     private double saldo;
     private double tipoInterés;
 
+    /**
+     * constructor sin atributos ninguno
+     */
+
     public CCuenta()
     {
     }
+    
+    /**
+     * Constructor con atributos
+     * @param nom parámetro de nombre 
+     * @param cue parámetro de cuenta
+     * @param sal parámetro de saldo
+     * @param tipo parámetro para el típo de interés
+     */
 
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
@@ -18,6 +38,11 @@ public class CCuenta {
         cuenta=cue;
         saldo=sal;
     }
+    
+    /**
+     * Getters y setters del constructor
+     * @return nombre
+     */
 
     public String getNombre() {
 		return nombre;
